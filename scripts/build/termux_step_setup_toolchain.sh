@@ -44,6 +44,9 @@ termux_step_setup_toolchain() {
 	elif [ "$TERMUX_ARCH" = "i686" ]; then
 		# From $NDK/docs/CPU-ARCH-ABIS.html:
 		CFLAGS+=" -march=i686 -msse3 -mstackrealign -mfpmath=sse"
+		# i686 seem to explicitly require -fPIC, see
+		# https://github.com/termux/termux-packages/issues/7215#issuecomment-906154438
+		CPPFLAGS+=" -fPIC"
 		export GOARCH=386
 		export GO386=sse2
 	elif [ "$TERMUX_ARCH" = "aarch64" ]; then
@@ -69,7 +72,7 @@ termux_step_setup_toolchain() {
 	CFLAGS+=" -fstack-protector-strong"
 	LDFLAGS+=" -Wl,-z,relro,-z,now"
 
-	if [ "$TERMUX_DEBUG" = "true" ]; then
+	if [ "$TERMUX_DEBUG_BUILD" = "true" ]; then
 		CFLAGS+=" -g3 -O1"
 		CPPFLAGS+=" -D_FORTIFY_SOURCE=2 -D__USE_FORTIFY_LEVEL=2"
 	else

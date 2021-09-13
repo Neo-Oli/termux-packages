@@ -32,7 +32,6 @@ acr|radare/acr
 algernon|xyproto/algernon
 android-tools|nmeum/android-tools
 antibody|getantibody/antibody
-apksigner-old|fornwall/apksigner
 aptly|aptly-dev/aptly
 aria2|aria2/aria2|\d+\.\d+\.\d+
 asciidoc|asciidoc/asciidoc-py3
@@ -59,7 +58,6 @@ c-ares|c-ares/c-ares|\d+.\d+.\d+
 cava|karlstav/cava
 cavif-rs|kornelski/cavif-rs
 ccache|ccache/ccache
-ccnet|haiwen/ccnet
 check|libcheck/check
 chezmoi|twpayne/chezmoi
 chromaprint|acoustid/chromaprint
@@ -135,7 +133,6 @@ hexyl|sharkdp/hexyl
 heyu|HeyuX10Automation/heyu
 hiptext|jart/hiptext
 hors|WindSoilder/hors
-htop-legacy|htop-dev/htop
 hub|github/hub
 hugo|gohugoio/hugo
 hunspell|hunspell/hunspell
@@ -155,6 +152,7 @@ jp2a|Talinx/jp2a
 jq|stedolan/jq|\d+\.\d+
 jsoncpp|open-source-parsers/jsoncpp
 k9s|derailed/k9s
+kak-lsp|kak-lsp/kak-lsp
 kakoune|mawww/kakoune
 keybase|keybase/client
 keychain|funtoo/keychain
@@ -177,6 +175,7 @@ libconfuse|martinh/libconfuse
 libcue|lipnitsk/libcue
 libcunit|Linaro/libcunit|\d+\.\d+.\d+
 libczmq|zeromq/czmq
+libde265|strukturag/libde265
 libdispatch|apple/swift-corelibs-libdispatch|\d+\.\d+\.\d+
 libevent|libevent/libevent|\d+\.\d+\.\d+
 libexif|libexif/libexif|\d+.\d+.\d+
@@ -184,10 +183,12 @@ libexpat|libexpat/libexpat|\d+.\d+.\d+
 libgd|libgd/libgd|\d+\.\d+\.\d+
 libgit2|libgit2/libgit2
 libgraphite|silnrsi/graphite
+libheif|strukturag/libheif
 libical|libical/libical
 libimobiledevice|libimobiledevice/libimobiledevice
 libjansson|akheron/jansson
 libjasper|mdadams/jasper|\d+\.\d+\.\d+
+libjxl|libjxl/libjxl
 liblz4|lz4/lz4
 libmaxminddb|maxmind/libmaxminddb
 libmesode|boothj5/libmesode
@@ -202,6 +203,7 @@ libprotobuf-c|protobuf-c/protobuf-c
 libpsl|rockdaboot/libpsl
 libqrencode|fukuchi/libqrencode
 libraqm|HOST-Oman/libraqm
+librav1e|xiph/rav1e|\d+\.\d+\.\d+
 librsync|librsync/librsync
 libsndfile|erikd/libsndfile
 libsodium|jedisct1/libsodium|\d+\.\d+\.\d+

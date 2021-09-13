@@ -2,9 +2,8 @@ TERMUX_PKG_HOMEPAGE=https://clang.llvm.org/
 TERMUX_PKG_DESCRIPTION="Modular compiler and toolchain technologies library"
 TERMUX_PKG_LICENSE="NCSA"
 TERMUX_PKG_MAINTAINER="@buttaface"
-TERMUX_PKG_VERSION=12.0.0
-TERMUX_PKG_REVISION=1
-TERMUX_PKG_SHA256=9ed1688943a4402d7c904cc4515798cdb20080066efa010fe7e1f2551b423628
+TERMUX_PKG_VERSION=12.0.1
+TERMUX_PKG_SHA256=129cb25cd13677aad951ce5c2deb0fe4afc1e9d98950f53b51bdcfb5a73afa0e
 TERMUX_PKG_SRCURL=https://github.com/llvm/llvm-project/releases/download/llvmorg-$TERMUX_PKG_VERSION/llvm-project-$TERMUX_PKG_VERSION.src.tar.xz
 TERMUX_PKG_HOSTBUILD=true
 TERMUX_PKG_RM_AFTER_INSTALL="
@@ -65,11 +64,9 @@ termux_step_host_build() {
 }
 
 termux_step_pre_configure() {
-	if [ "$TERMUX_PKG_QUICK_REBUILD" = "false" ]; then
-		mkdir openmp/runtime/src/android
-		cp $TERMUX_PKG_BUILDER_DIR/nl_types.h openmp/runtime/src/android
-		cp $TERMUX_PKG_BUILDER_DIR/nltypes_stubs.cpp openmp/runtime/src/android
-	fi
+	mkdir openmp/runtime/src/android
+	cp $TERMUX_PKG_BUILDER_DIR/nl_types.h openmp/runtime/src/android
+	cp $TERMUX_PKG_BUILDER_DIR/nltypes_stubs.cpp openmp/runtime/src/android
 
 	# Add unknown vendor, otherwise it screws with the default LLVM triple
 	# detection.
